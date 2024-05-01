@@ -10,7 +10,6 @@
     width: 100px;
 }
 body{
-    background: rgba(0, 0, 0, 0.6);
     background-image: url("../img/back.jpg");
     
 }
@@ -44,4 +43,13 @@ body{
 }
 #message{
   resize: none;
+}
+#back-top{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+}
+#copyright{
+  font-family: "Open Sans", sans-serif;
 }
