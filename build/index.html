@@ -11,10 +11,11 @@
     />
     <link rel="stylesheet" href="assets/css/custom.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Yoseph Kedir | Portfolio</title>
   </head>
   <body class="">
-    <header>
+    <header class="">
       <nav class="bg-slate-900 text-slate-100 p-3 mt-5 mx-8" id="rounded-nav">
         <div class="flex justify-between">
           <ul class="">
@@ -51,7 +52,7 @@
     <main>
       <div class="flex justify-center items-center h-screen">
         <section id="intro" class="text-center">
-          <span class="px-12 py-7 mx-3 my-3 rounded-lg" id="name"
+          <span class="px-12 py-7 mx-3 my-3 rounded-lg hover:bg-red-900" id="name"
             >Hey, I'm Yoseph</span
           >
           <br />
@@ -60,23 +61,143 @@
           >
         </section>
       </div>
-      <section id="about" class="flex ">
-        <div id="about_text" class="bg-gray-200 w-1/2 pt-16"><br><br><br>
-            <h1 class="text-5xl font-bold m-5 p-5">About Me</h1>
-            <p class="text-justify px-11 text-lg">I am a skilled full-stack web developer with experience in HTML, CSS, JavaScript, Python, Flask, MySQL, SQL and Git. I enjoy exploring new technologies and keeping up with the latest trends in web development. I am currently taking a 7 month long bootcamp on full-stack development with <span class="font-bold text-gray-500 hover:text-gray-800 cursor-pointer"> DirectEd Development Foundation.</span></p>
+      <section id="about" class="flex">
+        <div id="about_text" class="bg-gray-200 w-1/2 pt-16">
+          <br /><br /><br />
+          <h1 class="text-5xl font-bold m-5 p-5">About Me</h1>
+          <p class="text-justify px-11 text-lg">
+            I am a skilled full-stack web developer with experience in HTML,
+            CSS, JavaScript, Python, Flask, MySQL, SQL and Git. I enjoy
+            exploring new technologies and keeping up with the latest trends in
+            web development. I am currently taking a 7 month long bootcamp on
+            full-stack development with
+            <a target="_blank" href="https://directed.dev"
+              ><span
+                class="font-bold text-gray-500 hover:text-gray-800 cursor-pointer"
+              >
+                DirectEd Development Foundation.</span
+              ></a
+            >
+          </p>
         </div>
         <div id="profile" class="w-1/2 p-40 bg-gray-400">
-            <img src="assets/img/profile.jpg" alt="">
-            <p class="">Yoseph Kedir</p>
-            <p>FUll-Stack Developer</p>
+          <img
+            class="items-center rounded-xl"
+            src="assets/img/profile.jpg"
+            alt="Profile Picture"
+            title="Yoseph Kedir"
+          />
+          <p class="text-4xl font-bold text-center mt-5">Yoseph Kedir</p>
+          <p class="font-light text-xl text-center">
+            &nbsp;&nbsp;Full-Stack Developer
+          </p>
+        </div>
+      </section>
+      <section id="projects" class="text-gray-700 bg-gray-300">
+        <h2 class="px-4 py-8 text-5xl text-center font-bold">Projects</h2>
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  class="object-cover object-center h-full w-full"
+                  src="assets/img/HMS.png"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+                Health Monitoring System
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                Controls patients blood pressure, Heart beat and blood sugar level
+              </p>
+              <a href="#" class="text-indigo-500 inline-flex items-center mt-3"
+                >View source code
+                
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 hover:bg-indigo-950 text-slate-200 ">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  class="object-cover object-center h-full w-full"
+                  src="assets/img/LinkLand.png"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5 hover:text-slate-200">
+                LinkLand
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                A mini social media platform for college students.
+              </p>
+              <a href="#" class="text-indigo-500 inline-flex items-center mt-3"
+                >View source code
+                
+              </a>
+              
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  class="object-cover object-center h-full w-full"
+                  src="assets/img/LTS.png"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+                The Little Taco Shop
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                A website for The Little Taco Shop, A shop found in Addis Ababa, Ethiopia.
+              </p>
+              <a href="#" class="text-indigo-500 inline-flex items-center mt-3"
+                >View source code
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resume">
+        <div class="flex justify-center items-center h-screen m-0 bg-slate-200 text-teal-600">
+          <div class="w-1/2 selection:bg-slate-800">
+            <h1 class="text-center text-5xl font-thin py-12 my-8" id="resume">Resume</h1>
+            <div class="flex justify-center items-center">
+              <a class="block text-center py-5 my-5 bg-yellow-400 rounded-3xl w-1/2" href="assets/img/Resume.pdf" target="_blank">OPEN IN NEW TAB</a>
+              <a class="block text-center py-5 my-5 bg-yellow-400 w-1/2 rounded-3xl" href="assets/img/Resume.pdf" download>DOWNLOAD</a>
+            </div>
+          </div>
+          <div class="w-1/2 bg-slate-900 flex h-screen">
+            <img class="mx-auto py-8 px-5" src="assets/img/Resume.jpg" alt="Yoseph Kedir Resume">
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="bg-slate-100 flex justify-center h-screen text-zinc-800 justify-center item-center">
+        <div class="w-1/2 " id="contact-text">
+          <h1 class="text-5xl font-bold">LET'S WORK TOGETHER!</h1>
+          <img src="assets/img/team.svg" alt="Team work" class=" w-1/2">
+        </div>
+        <div class="w-1/2 block" id="contact-form">
+        
+          <form action="https://httpsbin.org" method="get">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Message" class="rounded-lg"></textarea>
+            <button type="submit">SUBMIT</button>
+            <button type="reset">RESET</button>
+          </form>
         </div>
       </section>
     </main>
-    <!-- Social Media -->
-    <!-- <aside>
-        <ul>
-            <li></li>
-        </ul>
+    <!-- Social Media
+    <aside>
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa-brands fa-github"></i></a>
+      </div>
     </aside> -->
 
     <footer></footer>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap');
 
 #rounded-nav{
     border-radius: 80px;
@@ -27,4 +28,20 @@ body{
 #about_text{
     font-family: "Open Sans", sans-serif;
 
+}
+::selection {
+
+  background-color: rgb(22, 212, 57);
+}
+
+#resume{
+  font-family: "Coustard", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#github-icon{
+  margin-left: -19px;
+}
+#message{
+  resize: none;
 }
