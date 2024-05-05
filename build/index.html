@@ -17,53 +17,51 @@
     <title>Yoseph Kedir | Portfolio</title>
   </head>
   <body class="bg-black">
-    
-    <header>
-      <nav
-        class="bg-slate-900 bg-opacity-80 text-slate-100 p-3 mt-5 mx-8"
-        id="rounded-nav"
-      >
-        <div class="flex justify-between">
-          <ul class="">
-            <a href="#"
-              ><li class="hover:cursor-pointer">
-                <img src="assets/img/logo.png" alt="YK" id="logo-img" /></li
-            ></a>
-          </ul>
-          <ul class="flex px-3 py-3 justify-end">
-            <a href="#about">
-              <li class="px-8 py-2 hover:text-gray-300 cursor-pointer">
-                About
-              </li></a
-            >
-            <a href="#projects"
-              ><li class="px-8 py-2 hover:text-gray-300 cursor-pointer">
-                Projects
-              </li></a
-            >
-            <a href="#resume"
-              ><li class="px-8 py-2 hover:text-gray-300 cursor-pointer">
-                Resume
-              </li></a
-            >
-            <a href="#contact"
-              ><li class="px-8 py-2 hover:text-gray-300 cursor-pointer">
-                Contact Me
-              </li></a
-            >
-          </ul>
+    <header id="rounded-nav" class="bg-slate-900 text-slate-100 mx-8 mt-5">
+      <section class="mx-auto flex items-center justify-between p-3">
+          <a class="justify-start" href="#"><img id="logo-img" src="assets/img/logo.png" alt="YK logo"></a>
+        <div class="justify-end">
+          <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+            
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+            </div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block pr-4">
+            <a href="#about" class="hover:opacity-90">About</a>
+            <a href="#projects" class="hover:opacity-90">Projects</a>
+            <a href="#resume" class="hover:opacity-90">Resume</a>
+            <a href="#contact" class="hover:opacity-90">Contact Me</a>
+          </nav>
         </div>
-      </nav>
+      </section>
+      <section id="mobile-menu"
+        class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-slate-900 rounded-2xl text-5xl">
+  
+        <nav class="flex min-h-screen flex-col items-center py-8 ">
+          
+          <a href="#about" class="w-full py-6 text-center hover:opacity-90">About</a>
+          <a href="#projects" class="w-full py-6 text-center hover:opacity-90">Projects</a>
+          <a href="#resume" class="w-full py-6 text-center hover:opacity-90">Resume</a>
+          <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Me</a>
+        </nav>
+      </section>
     </header>
     <main>
       <div class="flex justify-center items-center h-screen">
         <section id="intro" class="text-center">
           <span
-            class="px-12 py-7 mx-3 my-3 rounded-lg"
+            class="hidden sm:block px-12 py-7 mx-3 my-3 rounded-lg"
             id="name"
             >Hey, I'm Yoseph</span
           >
-          <br />
+          <div
+            class="sm:hidden px-12 py-7 mx-3 my-3 rounded-lg"
+            id="name"
+            ><p>Hey I'm</p>
+            <p>Yoseph</p></div
+          >
+          
           <span id="title" class="text-yellow-50 block py-5"
             >Full-Stack Developer</span
           >
@@ -74,8 +72,8 @@
           <br /><br /><br />
           <h1 class="text-5xl font-bold m-5 p-5">About Me</h1>
           <p class="text-justify px-11 text-lg">
-            I am a skilled full-stack web developer with experience in HTML,
-            CSS, JavaScript, Python, Flask, MySQL, SQL and Git. I enjoy
+            I am a skilled full-stack web developer with experience in <span class="text-gray-500 font-bold hover:text-gray-800 cursor-pointer"> HTML,
+              CSS, JavaScript, Python, Bash, Flask, MySQL, SQL and Git</span>. I enjoy
             exploring new technologies and keeping up with the latest trends in
             web development. I am currently taking a 7 month long bootcamp on
             full-stack development with
@@ -251,7 +249,7 @@
         </div>
       </section>
       <section id="resume">
-        <div class="flex justify-center items-center h-screen m-0 bg-slate-200 text-teal-600 flex-col xl:flex-row">
+        <div class="flex  justify-center items-center h-screen m-0 bg-slate-200 text-teal-600 flex-col xl:flex-row">
           <div class="w-1/2 xl:w-full selection:bg-slate-800">
             <h1 class="text-center text-5xl font-thin py-12 my-8" id="resume">
               Resume
@@ -275,8 +273,8 @@
       id="contact"
       class="bg-gray-300  h-screen justify-center items-center"
     >
-      <div class="bg-gray-300 flex justify-center items-center pt-12 pb">
-        <div class="w-1/2 flex flex-col items-center" id="contact-text">
+      <div class="bg-gray-300 flex flex-wrap justify-center items-center pt-12 pb">
+        <div class="md:w-1/2 flex flex-col items-center w-full " id="contact-text">
           <h1 class="text-5xl font-bold mb-10">
             LET'S WORK <br /><span class="">TOGETHER!</span>
           </h1>
@@ -289,12 +287,12 @@
       <div
         class="bg-gray-300 flex justify-center items-center"
       >
-        <div class="w-1/2 flex flex-col items-center" id="contact-text">
+        <div class="w-1/2 md:flex flex-col items-center hidden" id="contact-text">
           <img src="assets/img/team.svg" alt="Team work" class="w-1/2" />
         </div>
-        <div class="w-1/2 flex items-center justify-center" id="contact-form">
+        <div class=" sm:w-1/2 flex flex-wrap items-center justify-center" id="contact-form">
           <form
-            action="https://httpsbin.org"
+            action="https://httpsbin.org/get"
             method="get"
             class="w-full text-center"
           >
@@ -326,12 +324,7 @@
               >
                 SUBMIT
               </button>
-              <!-- <button
-                type="reset"
-                class="m-2 font-bold bg-gray-800 text-xl text-gray-100 py-4 px-7 rounded-lg transition-transform duration-300 hover:scale-105"
-              >
-                RESET
-              </button> -->
+              
             </div>
           </form>
         </div>
@@ -345,7 +338,7 @@
     </aside>
 
     <footer class="text-gray-50 bg-slate-800 sm:">
-      <div class="flex justify-center items-center h-60">
+      <div class="flex flex-wrap justify-center items-center h-60">
         <a target="_blank" href="https://twitter.com/YosephKedir" class="m-2 p-4 sm:p-3 bg-black rounded-lg hover:bg-white hover:text-black transition-transform duration-300 hover:scale-110"><i class="fa fa-twitter"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/yoseph-kedir" class="m-2 p-4 sm:p-3 bg-black rounded-lg hover:bg-white hover:text-black transition-transform duration-300 hover:scale-110"><i class="fa fa-linkedin"></i></a>
         <a target="_blank" href="https://github.com/YosephSE" class="m-2 p-4 sm:p-3 bg-black rounded-lg hover:bg-white hover:text-black transition-transform duration-300 hover:scale-110"><i class="fa fa-github"></i></a>
